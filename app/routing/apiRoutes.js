@@ -27,7 +27,6 @@ module.exports = function(app) {
         cfScores = friendData[i].scores;
         currentScore = 0;
         for (var j = 0; j < newFriend.scores.length; j++) {
-
           var cfScores = friendData[i].scores;
           if (parseInt(nfScores[j]) != parseInt(cfScores[j])) {
             var difference = parseInt(nfScores[j]) - parseInt(cfScores[j]);
@@ -37,32 +36,23 @@ module.exports = function(app) {
             }
             currentScore += difference;
           }
-
-          // console.log(friendData[i].name + " Q:" + j + " " + friendData[i].scores[j]);
         }
-        console.log("Current score" + currentScore);
-        console.log("bestMatchIndex" + bestMatchIndex);
 
         if (i === 0) {
-        	bestMatchScore = currentScore;
+          bestMatchScore = currentScore;
         }
 
         if (currentScore < bestMatchScore) {
-        	console.log("Best" + bestMatchScore + " currentScore " + currentScore);
+          console.log("Best" + bestMatchScore + " currentScore " + currentScore);
           bestMatchScore = currentScore;
           bestMatchIndex = i;
         }
         console.log("bestMatchIndex" + bestMatchIndex);
         console.log(friendData[i].name + " difference is: " + currentScore);
-        // friendData[i]
       }
-      // console.log("New Friend = " + JSON.stringify(newFriend, null, 2));
       console.log("Best Match = " + JSON.stringify(friendData[bestMatchIndex], null, 2) + " Score: " + bestMatchScore);
       friendData.push(req.body);
-      // console.log(JSON.stringify(friendData, null, 2));
       res.json(friendData[bestMatchIndex]);
     }
-    // If more than 2 process logic to find the best match
-    // Display the result in a modal popup, with name and picture
   });
 }
