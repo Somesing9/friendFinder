@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder - Survey</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center">Friend Finder Survey</h1>
+    <hr>
+    <!--Start Form -->
+    <!-- <form id="friendshipSurvey" class="form-horizontal" action=""> -->
+    <div class="form-horizontal">
+      <div class="form-group">
+        <label for="name" class=" control-label">Name</label>
+        <!-- <div class="col-sm-10"> -->
+          <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+        <!-- </div> -->
+      </div>
+      <div class="form-group">
+        <label for="picture" class="col-sm-2 control-label">Picture</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="picture" id="picture" placeholder="Profile Picture url">
+        </div>
+      </div>
+      <hr>
+      <div class="form-group">
+        <label for="question1" class=" control-label">I like to be physically active:</label>
+        <!-- <div class="col-sm-10"> -->
+          <select class="form-control" name="question1" id="question1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        <!-- </div> -->
+      </div>
+      <div class="form-group">
+        <label for="question2" class="col-sm-2 control-label">I enjoy live music.</label>
+        <div class="col-sm-10">
+          <select class="form-control" name="question2" id="question2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="question3" class="col-sm-2 control-label">I like vegetables</label>
+        <div class="col-sm-10">
+          <select class="form-control" name="question3" id="question3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="question4" class="col-sm-2 control-label">I enjoy having a few drinks with dinner.</label>
+        <div class="col-sm-10">
+          <select class="form-control" name="question4" id="question4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="question5" class="col-sm-2 control-label">Money makes the world go round.</label>
+        <div class="col-sm-10">
+          <select class="form-control" name="question5" id="question5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="question6" class="col-sm-2 control-label">Cleveland is an amazing city.</label>
+        <div class="col-sm-10">
+          <select class="form-control" name="question6" id="question6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="question7" class="col-sm-2 control-label">7</label>
+        <div class="col-sm-10">
+          <select class="form-control" name="question7" id="question7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="question8" class="col-sm-2 control-label">8.</label>
+        <div class="col-sm-10">
+          <select class="form-control" name="question8" id="question8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="question9" class="col-sm-2 control-label">9</label>
+        <div class="col-sm-10">
+          <select class="form-control" name="question9" id="question9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="question10" class="col-sm-2 control-label">10</label>
+        <div class="col-sm-10">
+          <select class="form-control" name="question10" id="question10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button id="submit" type="button" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+    </div>
+    <!-- </form> -->
+    <!--End Form -->
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">Friends API</a></p>
+      </div>
+    </footer>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Your best Match</h4>
+        </div>
+        <div class="modal-body">
+          <h2 id="matchName"></h2>
+          <img id="matchImg" src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="Best Match">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+
+  $(function() {
+    $("#name").val
+  });
+
+  // Capture the form inputs 
+  $("#submit").on("click", function(e) {
+
+    // Form validation
+    function validateForm() {
+      var isValid = true;
+      $('.form-control').each(function() {
+        if ($(this).val() === '')
+          isValid = false;
+      });
+
+      $('.chosen-select').each(function() {
+
+        if ($(this).val() === "")
+          isValid = false
+      })
+      return isValid;
+    }
+
+    // If all required fields are filled
+    if (validateForm() == true) {
+      // Create an object for the user's data
+      var userData = {
+        name: $("#name").val(),
+        photo: $("#picture").val(),
+        scores: [$("#question1").val(), $("#question2").val(), $("#question3").val(), $("#question4").val(), $("#question5").val(), $("#question6").val(), $("#question7").val(), $("#question5").val(), $("#question9").val(), $("#question10").val()]
+      }
+
+      // Grab the URL of the website
+      var currentURL = window.location.origin;
+
+      // AJAX post the data to the friends API. 
+      $.post(currentURL + "/api/friends", userData, function(data) {
+        console.log("Post success!");
+        console.log(data);
+
+        // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+        $("#matchName").text(data.name);
+        $('#matchImg').attr("src", data.photo);
+
+        // Show the modal with the best match 
+        $("#resultsModal").modal('toggle');
+
+      });
+    } else {
+      alert("Please fill out all fields before submitting!");
+    }
+
+    return false;
+  });
+  </script>
+</body>
+
+</html>
